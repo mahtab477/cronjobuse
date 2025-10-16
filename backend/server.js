@@ -15,6 +15,8 @@ mongoose
   .then(() => console.log(" MongoDB Connected"))
   .catch((err) => console.log(" MongoDB Error:", err));
 
+  
+
 // ✅ Start cron job
 setupDayUpdater();
 

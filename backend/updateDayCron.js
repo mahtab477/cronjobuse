@@ -1,8 +1,15 @@
 const cron = require("node-cron");
 const User = require("./models/userModel");
 
+
+
 function setupDayUpdater() {
-  cron.schedule("0 0 * * *", async () => {
+  setTimeout(
+    () => console.log("Cron Test Started... Waiting for job to run"),
+    1000
+  );
+
+  cron.schedule("*/10 * * * * *", async () => {
     try {
       const days = [
         "Sunday",

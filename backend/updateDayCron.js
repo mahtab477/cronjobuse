@@ -9,7 +9,7 @@ function setupDayUpdater() {
     1000
   );
 
-  cron.schedule("*/10 * * * * *", async () => {
+  cron.schedule("*/20 * * * * *", async () => {
     try {
       const days = [
         "Sunday",
